@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bg3">
+    <AbsoluteLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >
+       <ImageView 
+           android:id="@+id/pic"
+           android:layout_width="60dp"
+           android:layout_height="50dp"
+           android:layout_x="80dp"
+           android:layout_y="120dp"
+           android:src="@drawable/xiaomi"     /> 
+           <TextView
+               android:id="@+id/pingming"
+               android:layout_width="60dp"
+               android:layout_height="20dp"
+               android:layout_x="90dp"
+               android:layout_y="180dp"
+               android:text="小米"/>
+           <TextView
+               android:id="@+id/gongxiao"
+               android:layout_width="100dp"
+               android:layout_height="20dp"
+               android:layout_x="180dp"
+               android:layout_y="70dp"
+               android:text="功效:"
+               android:textColor="@color/text"/>
+                <TextView
+               android:id="@+id/text1"
+               android:layout_width="100dp"
+               android:layout_height="20dp"
+               android:layout_x="180dp"
+               android:layout_y="100dp"
+               android:text="富含B1，B2"
+               android:textColor="@color/text"/>
+                <TextView
+               android:id="@+id/text2"
+               android:layout_width="100dp"
+               android:layout_height="20dp"
+               android:layout_x="180dp"
+               android:layout_y="130dp"
+               android:text="清凉解暑"
+               android:textColor="@color/text"/>
+                <TextView
+               android:id="@+id/text3"
+               android:layout_width="100dp"
+               android:layout_height="20dp"
+               android:layout_x="180dp"
+               android:layout_y="160dp"
+               android:text="健胃除湿"
+               android:textColor="@color/text"/>
+                <TextView
+               android:id="@+id/text4"
+               android:layout_width="100dp"
+               android:layout_height="20dp"
+               android:layout_x="180dp"
+               android:layout_y="190dp"
+               android:text="合睡安眠"
+               android:textColor="@color/text"/>
+             <ImageButton
+            android:id="@+id/xiaomi"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="40dp"
+            android:layout_y="300dp"
+            android:src="@drawable/xiaomi"/>
+        <ImageButton
+            android:id="@+id/apple"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="100dp"
+            android:layout_y="300dp"
+            android:src="@drawable/apple"/>
+        <ImageButton
+            android:id="@+id/chengzi"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="160dp"
+            android:layout_y="300dp"
+            android:src="@drawable/chengzi"/>
+        <ImageButton
+            android:id="@+id/dazao"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="220dp"
+            android:layout_y="300dp"
+            android:src="@drawable/dazao"/>
+        <ImageButton
+            android:id="@+id/huluobo"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="40dp"
+            android:layout_y="350dp"
+            android:src="@drawable/huoluobo"/>
+        <ImageButton
+            android:id="@+id/kuihuazi"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="100dp"
+            android:layout_y="350dp"
+            android:src="@drawable/kuihuazi"/>
+        <ImageButton
+            android:id="@+id/lianzi"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="160dp"
+            android:layout_y="350dp"
+            android:src="@drawable/lianzi"/>
+        <ImageButton
+            android:id="@+id/milk"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="220dp"
+            android:layout_y="350dp"
+            android:src="@drawable/milk"/>
+        <ImageButton
+            android:id="@+id/ningmeng"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="40dp"
+            android:layout_y="400dp"
+            android:src="@drawable/ningmeng"/>
+        <ImageButton
+            android:id="@+id/ou"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="100dp"
+            android:layout_y="400dp"
+            android:src="@drawable/ou"/>
+        <ImageButton
+            android:id="@+id/putao"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="160dp"
+            android:layout_y="400dp"
+            android:src="@drawable/putao"/>
+        <ImageButton
+            android:id="@+id/xiangjiao"
+            android:layout_width="60dp "
+            android:layout_height="50dp"
+            android:layout_x="220dp"
+            android:layout_y="400dp"
+            android:src="@drawable/xiangjiao"/>
+
+ 
+
+    </AbsoluteLayout>
+</LinearLayout>

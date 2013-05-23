@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeRL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backpix"
+    android:gravity="right" >
+
+    <ImageView
+        android:id="@+id/bgWelcomeImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.88"
+        android:src="@drawable/starry" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-20dip"
+        android:background="@drawable/renrenlogoutbtn" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-20dip"
+        android:background="@drawable/renrenloginbtn" />
+
+    <TextView
+        android:id="@+id/minhourWelcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/clock"
+        android:fitsSystemWindows="false"
+        android:shadowColor="#dddddd"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.0"
+        android:text="10:10"
+        android:textColor="#FFFFFF"
+        android:textScaleX="1.1"
+        android:textSize="42sp"
+        android:typeface="serif" />
+    
+    <TextView
+        android:id="@+id/secWelcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/minhourWelcomeTxt"
+        android:layout_alignBottom="@+id/minhourWelcomeTxt"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/minhourWelcomeTxt"
+        android:text="50"
+        android:textColor="#FFFFFF"
+        android:textScaleX="1.9"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/timeFlagImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="140dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/time_flag_morning" />
+
+    <Button
+        android:id="@+id/sleepBtn"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="-20dip"
+        android:background="@drawable/sleep"
+        android:gravity="bottom|center_horizontal|center"
+        android:textColor="#502c0a" />
+
+    <Button
+        android:id="@+id/badgeBtn"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="-20dip"
+        android:background="@drawable/badgenewbtn"
+        android:gravity="bottom|center_horizontal|center"
+        android:textColor="#194806"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/configBtn"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-20dip"
+        android:background="@drawable/configbtn"
+        android:fitsSystemWindows="false" />
+
+    <TextView
+        android:id="@+id/hideTipWelcomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeFlagImg"
+        android:layout_marginBottom="-30dp"
+        android:alpha="0.7"
+        android:background="#183648"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.5"
+        android:text="按钮将在约55分钟后原地复活"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#eeeeee"
+        android:textSize="23sp"
+        android:typeface="monospace"
+        android:visibility="invisible" />
+
+</RelativeLayout>

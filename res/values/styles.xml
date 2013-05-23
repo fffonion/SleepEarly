@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="NoTitleFullScreenLight" parent="android:Theme.Light.NoTitleBar.Fullscreen" >
+         <item name="android:windowEnterAnimation">@anim/app_start</item>
+         <item name="android:wallpaperCloseEnterAnimation">@anim/app_start</item>
+    </style>
+    <style name="DarkTitle" parent="android:Theme.NoTitleBar" />
+    <style name="AppTheme" parent="android:Theme.Holo.Light" />
+	<style name="Transparent" parent="android:Theme.Light.NoTitleBar.Fullscreen">   
+                <item name="android:windowBackground">@color/transparent</item>   
+                <item name="android:windowIsTranslucent">true</item>   
+                
+                <!--item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item-->  
+    </style>   
+</resources>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/badgeNamePpupImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:src="@drawable/badge_title_wjbf" />
+
+    <TextView
+        android:id="@+id/titlePpupTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/popup_badge_got"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eeeeee" />
+
+    <ImageView
+        android:id="@+id/starPpupImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/star" />
+
+    <ImageView
+        android:id="@+id/linePpupImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/badgeNamePpupImg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/badgeAchievedPpupTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="已完成成就"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d7ccd3"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/tipPpupImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/badgeAchievedPpupTv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/popup_title_tip" />
+
+    <ImageView
+        android:id="@+id/backPpupImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:src="@drawable/popup_title_back"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/badgePpupImg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linePpupImg"
+        android:layout_marginTop="10dp"
+        android:longClickable="true"
+        android:src="@drawable/badge_pic_wjqw_l" />
+
+</RelativeLayout>

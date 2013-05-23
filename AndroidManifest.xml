@@ -1,0 +1,92 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dotnet.aoye"
+    android:installLocation="auto"
+    android:versionCode="1020"
+    android:versionName="1.02" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> 
+
+    <application
+        android:name=".ThisApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleFullScreenLight" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/NoTitleFullScreenLight" >
+        </activity>
+        <activity
+            android:name="com.renren.api.connect.android.AuthorizationHelper$BlockActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.weibo.net.ShareActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".BadgeActivity"
+            android:theme="@style/NoTitleFullScreenLight" >
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitleFullScreenLight" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SleepActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitleFullScreenLight" >
+        </activity>
+        <activity
+            android:name=".TipActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitleFullScreenLight" >
+        </activity>
+        <activity
+            android:name=".ConfigActivity"
+            android:label="@string/title_activity_config" >
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity android:name=".DieActivity" >
+        </activity>
+        <activity
+            android:name=".PopupActivity"
+            android:theme="@style/Transparent" >
+        </activity>
+        
+        <service android:enabled="true" android:name=".Service.ConstantService" />          
+        
+        <service android:enabled="true" android:name=".Service.ShowToastService" />
+        
+        <service android:enabled="true" android:name=".Service.ShowDialogService" />
+        
+        <receiver android:name=".Receiver.SuperReceiver">   
+                <intent-filter>   
+                    <action android:name="android.intent.action.BOOT_COMPLETED"></action>  
+                    <action android:name="android.intent.action.SCREEN_OFF" />
+        			<action android:name="android.intent.action.SCREEN_ON" />
+        			<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                    <category android:name="android.intent.category.LAUNCHER" />   
+                </intent-filter>   
+        </receiver>   
+          
+    </application>
+
+</manifest>

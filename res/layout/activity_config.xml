@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backpix" >
+
+    <ImageView
+        android:id="@+id/bmgCfgImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/imaginary_1" />
+
+    <ImageView
+        android:id="@+id/configLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/config_title_main" />
+
+    <CheckBox
+        android:id="@+id/cfgTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/configLabel"
+        android:layout_below="@+id/configLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:button="@drawable/checkbox"
+        android:text="@string/config_vibrate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:id="@+id/cfgTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cfgTv1"
+        android:layout_below="@+id/cfgTv1"
+        android:layout_marginTop="13dp"
+        android:button="@drawable/checkbox"
+        android:text="@string/config_use_12"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+<CheckBox
+        android:id="@+id/cfgTv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cfgTv1"
+        android:layout_below="@+id/cfgTv1"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="125dp"
+        android:button="@drawable/checkbox"
+        android:text="@string/config_show_tip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+    <CheckBox
+        android:id="@+id/cfgTv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cfgTv2"
+        android:layout_below="@+id/cfgTv2"
+        android:layout_marginTop="17dp"
+        android:button="@drawable/checkbox"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.5"
+        android:text="@string/config_sync"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/backCfgBtn"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backbtn" />
+
+    <Button
+        android:id="@+id/badgeCfgBtn"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/badgebtn" />
+
+    <Button
+        android:id="@+id/ConfigActivity_settime"
+        android:layout_width="138dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/cfgTv4"
+        android:layout_below="@+id/cfgTv4"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/settime" />
+
+    <Button
+        android:id="@+id/weiboCfgBtn"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/ConfigActivity_settime"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/config_weibo_in" />
+
+    <Button
+        android:id="@+id/renrenCfgBtn"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_alignBaseline="@+id/weiboCfgBtn"
+        android:layout_alignBottom="@+id/weiboCfgBtn"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/weiboCfgBtn"
+        android:background="@drawable/config_renren_in" />
+
+	<RadioGroup
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/weiboCfgBtn"
+	    android:layout_below="@+id/weiboCfgBtn"
+	    android:checkedButton="@+id/renrenShowOnIndexRd"
+	    android:orientation="horizontal" >
+
+	    <RadioButton
+	        android:id="@+id/weiboShowOnIndexRd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:button="@drawable/radiobtn"
+	        android:checked="false"
+	        android:shadowColor="#000000"
+	        android:shadowDx="1.5"
+	        android:shadowDy="1.5"
+	        android:shadowRadius="1.5"
+	        android:text="@string/config_show_on_index"
+	        android:textColor="#ffffff" />
+
+	    <RadioButton
+	        android:id="@+id/renrenShowOnIndexRd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="18dp"
+	        android:button="@drawable/radiobtn"
+	        android:checked="false"
+	        android:shadowColor="#000000"
+	        android:shadowDx="1.5"
+	        android:shadowDy="1.5"
+	        android:text="@string/config_show_on_index"
+	        android:textColor="#ffffff" />
+	</RadioGroup>
+
+	<TextView
+	    android:id="@+id/settimeCfgTv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/ConfigActivity_settime"
+	    android:layout_alignBottom="@+id/ConfigActivity_settime"
+	    android:layout_alignLeft="@+id/renrenCfgBtn"
+	    android:shadowColor="#000000"
+	    android:shadowDx="1.5"
+	    android:shadowDy="1.5"
+	    android:text="当前设定为半夜3点"
+	    android:textColor="#ffffff"
+	    android:textSize="16sp"
+	    android:textStyle="bold|italic" />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/renrenCfgBtn"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="2dp"
+	    android:layout_marginLeft="5dp"
+	    android:shadowColor="#000000"
+	    android:shadowDx="1.5"
+	    android:shadowDy="1.5"
+	    android:shadowRadius="2"
+	    android:text="点击按钮登陆~"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textColor="#fff2f2" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">我不要熬夜了</string>
+    <string name="menu_settings">设定(﹁ ﹁ )</string>
+    <string name="title_activity_welcome">我不要熬夜了</string>
+    <string name="auth_string">登录到淫淫网：</string>
+    <string name="auth_success">登陆成功</string>
+    <string name="auth_failed">登陆失败</string>
+    <string name="logout_success">退出成功</string>
+    <string name="title_activity_badge">&lt;(￣▽￣)～■成就</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">斯普拉西Activity</string>
+    <string name="sleeping_dialog_title">不想睡觉了？</string>
+    <string name="sleeping_dialog_PositiveButton">接着睡吧</string>
+    <string name="sleeping_dialog_NegativeButton">不想睡了</string>
+    <string name="wbyay_dialog_title">想睡觉了吗？</string>
+    <string name="wbyay_dialog_PositiveButton">是的我要睡觉</string>
+    <string name="wbyayactivity_dialog_checkbox">同步到已登录的社交网络，自曝熬夜情况</string>
+    <string name="wbyay_dialog_NegativeButton">等会儿再睡吧</string>
+    <string name="sleeping_giveup">放弃</string>
+    <string name="title_activity_config">ConfigActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="config_show_tips">在按钮上显示提示</string>
+    <string name="config_use_12">24小时制</string>
+    <string name="config_sync">获得成就后发送到登录的社交网络</string>
+    <string name="config_vibrate">弹出提醒时振动</string>
+    <string name="popup_badge_got">解锁新成就：</string>
+    <string name="guide_fling_tip">向右滑动继续→</string>
+    <string name="no_internet">当前木有连接到因特奈特~&gt;。&lt;~</string>
+	<string name="config_show_on_index">在首页显示↑</string>	
+	<string name="config_show_tip">定时显示小贴士</string>	
+	<string name="back_to_sleep">"3秒后将自动返回睡觉界面"</string>	
+	<string name="RENREN_APP_ID">207231</string>
+	<string name="RENREN_API_KEY">541fb75289f94b76b43c1e6eeb172e72</string>
+	<string name="RENREN_APP_SECRET">9274838b9cb24281bc72e2b718b79732</string>
+	
+	<string name="WEIBO_API_KEY">3154211429</string>
+	<string name="WEIBO_APP_SECRET">28fb8cda9339c734b0e099baf5142f4d</string>
+</resources>
